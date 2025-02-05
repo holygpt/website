@@ -16,9 +16,19 @@
         <nav>
             <div class="logo">Holy GPT</div>
             <div class="nav-links">
-                <a href="#features">Özellikler</a>
-                <a href="#download">İndir</a>
-                <a href="#contact">İletişim</a>
+                <a href="#features">
+                    <span class="tr">Özellikler</span>
+                    <span class="en" style="display: none;">Features</span>
+                </a>
+                <a href="#download">
+                    <span class="tr">İndir</span>
+                    <span class="en" style="display: none;">Download</span>
+                </a>
+                <a href="#contact">
+                    <span class="tr">İletişim</span>
+                    <span class="en" style="display: none;">Contact</span>
+                </a>
+                <button class="language-btn" onclick="toggleLanguage()">EN</button>
             </div>
         </nav>
     </header>
@@ -26,41 +36,64 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1>Holy GPT ile Kutsal Metinlere Erişin</h1>
-                <p>Kutsal kitapları keşfedin, manevi rehberlik alanında ve inanç yolculuğunuzda size eşlik edecek yapay
-                    zeka
-                    asistanınız</p>
-                <a href="#download" class="cta-button">Hemen İndir</a>
+                <h1 class="tr">Holy GPT ile Kutsal Metinlere Erişin</h1>
+                <h1 class="en" style="display: none;">Access Sacred Texts with Holy GPT</h1>
+
+                <p class="tr">Kutsal kitapları keşfedin, manevi rehberlik alanında ve inanç yolculuğunuzda size eşlik
+                    edecek yapay zeka asistanınız</p>
+                <p class="en" style="display: none;">Discover holy books with your AI assistant that will accompany you
+                    in spiritual guidance and your faith journey</p>
+
+                <a href="#download" class="cta-button">
+                    <span class="tr">Hemen İndir</span>
+                    <span class="en" style="display: none;">Download Now</span>
+                </a>
             </div>
             <div class="hero-image">
-                <img src="app-mockup.png" alt="Holy GPT Uygulama Görüntüsü">
+                <img src="app-mockup.png" alt="Holy GPT App Preview">
             </div>
         </section>
 
         <section id="features" class="features">
-            <h2>Özellikler</h2>
+            <h2 class="tr">Özellikler</h2>
+            <h2 class="en" style="display: none;">Features</h2>
+
             <div class="feature-grid">
                 <div class="feature-card">
-                    <h3>Çoklu Dil Desteği</h3>
-                    <p>Kuran ve İncil'i 4 farklı dilde okuyun: Türkçe, İngilizce, Almanca ve İspanyolca</p>
+                    <h3 class="tr">Çoklu Dil Desteği</h3>
+                    <h3 class="en" style="display: none;">Multi-Language Support</h3>
+                    <p class="tr">Kuran ve İncil'i 4 farklı dilde okuyun: Türkçe, İngilizce, Almanca ve İspanyolca</p>
+                    <p class="en" style="display: none;">Read the Quran and Bible in 4 different languages: Turkish,
+                        English, German, and Spanish</p>
                 </div>
                 <div class="feature-card">
-                    <h3>Günlük Ayet</h3>
-                    <p>Her gün size özel seçilen ayetler ile manevi yolculuğunuza ışık tutun</p>
+                    <h3 class="tr">Günlük Ayet</h3>
+                    <h3 class="en" style="display: none;">Daily Verse</h3>
+                    <p class="tr">Her gün size özel seçilen ayetler ile manevi yolculuğunuza ışık tutun</p>
+                    <p class="en" style="display: none;">Illuminate your spiritual journey with daily selected verses
+                    </p>
                 </div>
                 <div class="feature-card">
-                    <h3>Akıllı Chatbot</h3>
-                    <p>İnanç ve din konularında sorularınızı sorabileceğiniz yapay zeka destekli sohbet asistanı</p>
+                    <h3 class="tr">Akıllı Chatbot</h3>
+                    <h3 class="en" style="display: none;">Smart Chatbot</h3>
+                    <p class="tr">İnanç ve din konularında sorularınızı sorabileceğiniz yapay zeka destekli sohbet
+                        asistanı</p>
+                    <p class="en" style="display: none;">AI-powered chat assistant to answer your questions about faith
+                        and religion</p>
                 </div>
                 <div class="feature-card">
-                    <h3>Kolay Kullanım</h3>
-                    <p>Kullanıcı dostu arayüz ile kutsal metinlere anında erişim</p>
+                    <h3 class="tr">Kolay Kullanım</h3>
+                    <h3 class="en" style="display: none;">Easy to Use</h3>
+                    <p class="tr">Kullanıcı dostu arayüz ile kutsal metinlere anında erişim</p>
+                    <p class="en" style="display: none;">Instant access to sacred texts with a user-friendly interface
+                    </p>
                 </div>
             </div>
         </section>
 
         <section id="download" class="download">
-            <h2>Uygulamayı İndirin</h2>
+            <h2 class="tr">Uygulamayı İndirin</h2>
+            <h2 class="en" style="display: none;">Download the App</h2>
             <div class="store-buttons">
                 <a href="#" class="store-button">App Store</a>
                 <a href="#" class="store-button">Google Play</a>
@@ -71,15 +104,44 @@
     <footer id="contact">
         <div class="footer-content">
             <div class="footer-info">
-                <h3>İletişim</h3>
+                <h3 class="tr">İletişim</h3>
+                <h3 class="en" style="display: none;">Contact</h3>
                 <p>Email: info@holy-gpt.com</p>
             </div>
             <div class="footer-links">
-                <a href="#">Gizlilik Politikası</a>
-                <a href="#">Kullanım Şartları</a>
+                <a href="#" class="tr">Gizlilik Politikası</a>
+                <a href="#" class="en" style="display: none;">Privacy Policy</a>
+                <a href="#" class="tr">Kullanım Şartları</a>
+                <a href="#" class="en" style="display: none;">Terms of Use</a>
             </div>
         </div>
     </footer>
+
+    <script>
+        function toggleLanguage() {
+            const trElements = document.querySelectorAll('.tr');
+            const enElements = document.querySelectorAll('.en');
+            const langBtn = document.querySelector('.language-btn');
+
+            trElements.forEach(el => {
+                if (el.style.display === 'none') {
+                    el.style.display = '';
+                    langBtn.textContent = 'EN';
+                } else {
+                    el.style.display = 'none';
+                    langBtn.textContent = 'TR';
+                }
+            });
+
+            enElements.forEach(el => {
+                if (el.style.display === 'none') {
+                    el.style.display = '';
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
