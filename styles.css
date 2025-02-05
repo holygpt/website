@@ -52,11 +52,29 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-image: url('ss.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 10px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
 }
 
 .hero-content {
     flex: 1;
     padding-right: 2rem;
+    position: relative;
+    z-index: 1;
 }
 
 .hero h1 {
@@ -244,6 +262,16 @@ footer {
 .love-message {
     margin-bottom: 2rem;
     animation: pulse 2s infinite;
+    position: relative;
+    text-align: center;
+}
+
+.love-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
 }
 
 .love-message h1 {
