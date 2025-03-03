@@ -28,6 +28,11 @@
                 <img src="holy_logo.png" alt="HolyGPT Logo">
                 <span>HolyGPT</span>
             </div>
+            <button class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#features">Features</a>
@@ -669,6 +674,31 @@
                 img.setAttribute('src', currentSrc.replace(/screens\/(en|tr|de)/, `screens/${currentLang}`));
             });
         }
+
+        // Hamburger menü işlevselliği
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburgerMenu.addEventListener('click', () => {
+            hamburgerMenu.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Menü linklerine tıklandığında menüyü kapat
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburgerMenu.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Sayfa dışına tıklandığında menüyü kapat
+        document.addEventListener('click', (e) => {
+            if (!hamburgerMenu.contains(e.target) && !navLinks.contains(e.target)) {
+                hamburgerMenu.classList.remove('active');
+                navLinks.classList.remove('active');
+            }
+        });
     </script>
 </body>
 
