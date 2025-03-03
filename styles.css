@@ -954,24 +954,33 @@ footer {
         font-size: 1.2rem;
     }
 
+    #experience {
+        display: none !important;
+    }
+
     .experience {
-        display: none;
+        display: none !important;
     }
 
     .overview-section {
-        display: none;
+        display: none !important;
     }
 
     .overview-content {
-        display: none;
+        display: none !important;
     }
 
     .nav-arrow {
-        display: none;
+        display: none !important;
     }
 
     .overview-dots {
-        display: none;
+        display: none !important;
+    }
+
+    .triple-showcase,
+    .double-showcase {
+        display: none !important;
     }
 }
 
