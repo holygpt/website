@@ -606,104 +606,92 @@ footer {
 }
 
 @media (max-width: 992px) {
-    .nav-links {
-        display: none;
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 6rem 1rem 2rem;
+    }
+
+    .hero-content {
+        text-align: center;
+        padding: 0;
+        margin-bottom: 2rem;
     }
 
     .hero-visual {
-        width: 100vw;
-        max-width: 100%;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        overflow: hidden;
+        width: 100%;
+        min-height: auto;
+        perspective: none;
     }
 
     .slider-container {
         width: 100%;
-        max-width: 100%;
-        position: relative;
-        left: 0;
-        transform: none;
+        height: auto;
         display: flex;
         justify-content: center;
-        align-items: center;
+        overflow: hidden;
     }
 
     .slide {
-        position: relative;
+        position: absolute;
         width: 100%;
         max-width: 280px;
-        margin: 0 auto;
-        display: none;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: all 0.5s ease;
+    }
+
+    .slide.prev {
+        transform: translateX(-100%);
+        opacity: 0;
     }
 
     .slide.active {
-        display: block;
-        position: relative;
-        width: 100%;
-        max-width: 280px;
-        margin: 0 auto;
-    }
-
-    .phone-mockup {
-        width: 100%;
-        max-width: 280px;
-        margin: 0 auto;
-        display: block;
+        transform: translateX(0);
+        opacity: 1;
         position: relative;
     }
 
-    .main-screen {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
+    .slide.next {
+        transform: translateX(100%);
+        opacity: 0;
     }
 
     /* Overview section düzeltmeleri */
     .overview-section {
-        width: 100vw;
-        max-width: 100%;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        overflow: hidden;
         padding: 2rem 1rem;
-        box-sizing: border-box;
     }
 
     .overview-content {
         flex-direction: column;
-        padding: 0;
+        align-items: center;
+        text-align: center;
         gap: 2rem;
     }
 
     .overview-content.active {
         display: flex;
-        width: 100%;
     }
 
     .triple-showcase,
     .double-showcase {
-        height: auto;
         width: 100%;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-        margin: 0;
-        padding: 0;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
     }
 
     .triple-showcase .phone-mockup,
     .double-showcase .phone-mockup {
+        width: 45%;
+        max-width: 200px;
         position: relative;
-        width: 100%;
-        max-width: 280px;
-        height: auto;
         transform: none !important;
         opacity: 1;
-        margin: 1rem 0;
+        margin: 0;
     }
 
     .triple-showcase .phone-mockup.side-left,
@@ -713,10 +701,46 @@ footer {
 
     .double-showcase .phone-mockup.left,
     .double-showcase .phone-mockup.right {
-        transform: none;
-        position: relative;
-        left: auto;
-        right: auto;
+        display: block;
+    }
+
+    .overview-text {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 100vh;
+        background: var(--white);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+        padding: 6rem 1rem 2rem;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        margin: 0.3rem 0;
+        font-size: 1.1rem;
+        width: auto;
+        color: var(--text);
+    }
+
+    .language-selector {
+        margin: 0.5rem 0;
     }
 
     .hamburger-menu {
@@ -775,6 +799,7 @@ footer {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        display: block;
     }
 
     .slide {
@@ -805,6 +830,12 @@ footer {
     .overview-content {
         width: 100%;
         padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-links {
+        width: 75%;
     }
 }
 
