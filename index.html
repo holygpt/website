@@ -353,49 +353,11 @@
             });
         });
 
-        // Overview slider için yeni kod
-        document.addEventListener('DOMContentLoaded', function () {
-            const overviewContents = document.querySelectorAll('.overview-content');
-            const overviewDots = document.querySelectorAll('.overview-dot');
-            const leftArrow = document.querySelector('.nav-arrow.left');
-            const rightArrow = document.querySelector('.nav-arrow.right');
-            let currentOverview = 0;
-
-            function showOverview(index) {
-                overviewContents.forEach(content => content.classList.remove('active'));
-                overviewDots.forEach(dot => dot.classList.remove('active'));
-
-                overviewContents[index].classList.add('active');
-                overviewDots[index].classList.add('active');
-            }
-
-            function nextOverview() {
-                currentOverview = (currentOverview + 1) % overviewContents.length;
-                showOverview(currentOverview);
-            }
-
-            function prevOverview() {
-                currentOverview = (currentOverview - 1 + overviewContents.length) % overviewContents.length;
-                showOverview(currentOverview);
-            }
-
-            leftArrow.addEventListener('click', prevOverview);
-            rightArrow.addEventListener('click', nextOverview);
-
-            overviewDots.forEach((dot, index) => {
-                dot.addEventListener('click', () => {
-                    currentOverview = index;
-                    showOverview(currentOverview);
-                });
-            });
-        });
-
         // Dil değişkenleri
         const translations = {
             en: {
                 home: "Home",
                 features: "Features",
-                overview: "Overview",
                 contact: "Contact",
                 download: "Download",
                 hero_title: "Enlighten Your Spiritual Journey<br>with HolyGPT",
@@ -409,12 +371,6 @@
                 features_desc_2: "Bibliomancy is a form of divination that involves randomly selecting a passage from a book, often a sacred text, to seek guidance.",
                 features_title_3: "HolyGPT",
                 features_desc_3: "An AI assistant specially trained on all religions and beliefs.",
-                overview_title_1: "Read and Explore Every Word",
-                overview_desc_1: "Access full-text sacred scriptures without limitations. Read, search, and reflect on divine wisdom in its entirety.",
-                overview_title_2: "HolyGPT – Ask About Any Faith",
-                overview_desc_2: "Engage in deep conversations with our AI assistant, designed to discuss all religions and spiritual beliefs with knowledge and insight.",
-                overview_title_3: "Bibliomancy – Daily Divine Guidance",
-                overview_desc_3: "Seek inspiration through bibliomancy and receive a daily sacred text for reflection and spiritual insight.",
                 download_now: "Download Now",
                 get_in_touch: "Get in Touch",
                 footer_desc: "Smart access to sacred texts",
@@ -424,12 +380,11 @@
             tr: {
                 home: "Ana Sayfa",
                 features: "Özellikler",
-                overview: "Genel Bakış",
                 contact: "İletişim",
                 download: "İndir",
                 hero_title: "HolyGPT ile<br>Manevi Yolculuğunuzu Aydınlatın",
                 hero_subtitle: "Kutsal metinleri keşfedin, Tefe'ül yoluyla günlük rehberlik alın ve HolyGPT'nin yapay zeka destekli manevi içgörülerini keşfedin.",
-                app_store: "App Store",
+                app_store: "App Store(yakında)",
                 google_play: "Google Play",
                 app_store_soon: "App Store (yakında)",
                 features_title_1: "4 dilde kullanılabilir",
@@ -438,12 +393,6 @@
                 features_desc_2: "Tefe'ül, rehberlik amacıyla genellikle kutsal bir metinden rastgele bir pasaj seçmeyi içeren bir kehanet şeklidir.",
                 features_title_3: "HolyGPT",
                 features_desc_3: "Tüm dinler ve inançlar üzerine özel olarak eğitilmiş yapay zeka asistanı.",
-                overview_title_1: "Her Ayeti Okuyun ve Keşfedin",
-                overview_desc_1: "Sınırsız olarak kutsal metinlere erişin. İlahi hikmeti bütünüyle okuyun, arayın ve üzerinde düşünün.",
-                overview_title_2: "HolyGPT – Herhangi Bir İnanç Hakkında Sorun",
-                overview_desc_2: "Yapay zeka asistanımızla derin sohbetlere dalın, tüm dinler ve manevi inançlar hakkında bilgi ve içgörü edinin.",
-                overview_title_3: "Tefe'ül – Günlük İlahi Rehberlik",
-                overview_desc_3: "Tefe'ül yoluyla ilham alın ve manevi içgörü için günlük kutsal metin alın.",
                 download_now: "Şimdi İndir",
                 get_in_touch: "İletişime Geçin",
                 footer_desc: "Kutsal metinlere akıllı erişim",
@@ -453,12 +402,11 @@
             de: {
                 home: "Startseite",
                 features: "Funktionen",
-                overview: "Überblick",
                 contact: "Kontakt",
                 download: "Herunterladen",
                 hero_title: "Erhellen Sie Ihre spirituelle Reise<br>mit HolyGPT",
                 hero_subtitle: "Entdecken Sie heilige Texte, suchen Sie täglich Führung durch Stichomantie und erkunden Sie KI-gestützte spirituelle Einblicke mit HolyGPT.",
-                app_store: "App Store",
+                app_store: "App Store(bald)",
                 google_play: "Google Play",
                 app_store_soon: "App Store (bald)",
                 features_title_1: "In 4 Sprachen verfügbar",
@@ -467,12 +415,6 @@
                 features_desc_2: "Stichomantie ist eine Form der Weissagung, bei der zufällig eine Passage aus einem Buch, oft einem heiligen Text, ausgewählt wird, um Führung zu erhalten.",
                 features_title_3: "HolyGPT",
                 features_desc_3: "Ein KI-Assistent, der speziell für alle Religionen und Glaubensrichtungen trainiert wurde.",
-                overview_title_1: "Lesen und Erkunden Sie jedes Wort",
-                overview_desc_1: "Greifen Sie uneingeschränkt auf heilige Schriften zu. Lesen, suchen und reflektieren Sie die göttliche Weisheit in ihrer Gesamtheit.",
-                overview_title_2: "HolyGPT – Fragen Sie nach jedem Glauben",
-                overview_desc_2: "Führen Sie tiefgehende Gespräche mit unserem KI-Assistenten, der darauf ausgelegt ist, alle Religionen und spirituellen Überzeugungen mit Wissen und Einsicht zu diskutieren.",
-                overview_title_3: "Stichomantie – Tägliche göttliche Führung",
-                overview_desc_3: "Suchen Sie Inspiration durch Stichomantie und erhalten Sie täglich einen heiligen Text zur Reflexion und spirituellen Einsicht.",
                 download_now: "Jetzt Herunterladen",
                 get_in_touch: "Kontakt aufnehmen",
                 footer_desc: "Intelligenter Zugang zu heiligen Texten",
@@ -564,16 +506,6 @@
             document.querySelectorAll('.feature-item h3')[2].textContent = translations[currentLang].features_title_3;
             document.querySelectorAll('.feature-item p')[2].textContent = translations[currentLang].features_desc_3;
 
-            // Overview sections
-            document.querySelector('#overview-1 h2').textContent = translations[currentLang].overview_title_1;
-            document.querySelector('#overview-1 p').textContent = translations[currentLang].overview_desc_1;
-            document.querySelector('#overview-2 h2').textContent = translations[currentLang].overview_title_2;
-            document.querySelector('#overview-2 p').textContent = translations[currentLang].overview_desc_2;
-            document.querySelector('#overview-3 h2').textContent = translations[currentLang].overview_title_3;
-            document.querySelector('#overview-3 p').textContent = translations[currentLang].overview_desc_3;
-            document.querySelector('#overview-4 h2').textContent = translations[currentLang].overview_title_3;
-            document.querySelector('#overview-4 p').textContent = translations[currentLang].overview_desc_3;
-
             // Download section
             document.querySelector('.download h2').textContent = translations[currentLang].download_now;
 
@@ -606,6 +538,14 @@
             link.addEventListener('click', () => {
                 hamburgerMenu.classList.remove('active');
                 navLinks.classList.remove('active');
+
+                // Home linkine tıklandığında sayfanın en üstüne çık
+                if (link.getAttribute('href') === '#home') {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
 
