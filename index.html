@@ -1,43 +1,56 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holy GPT - Mobil Uygulamanız</title>
-		<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-WJ3MBZHLER"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+    <title>HolyGPT - Smart Access to Sacred Texts</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJ3MBZHLER"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-	  gtag('config', 'G-WJ3MBZHLER');
-	</script>
+        gtag('config', 'G-WJ3MBZHLER');
+    </script>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="logo">Holy GPT</div>
+            <div class="logo">
+                <img src="holy_logo.png" alt="HolyGPT Logo">
+                <span>HolyGPT</span>
+            </div>
             <div class="nav-links">
-                <a href="#features">
-                    <span class="tr">Özellikler</span>
-                    <span class="en" style="display: none;">Features</span>
-                </a>
-                <a href="#download">
-                    <span class="tr">İndir</span>
-                    <span class="en" style="display: none;">Download</span>
-                </a>
-                <a href="#contact">
-                    <span class="tr">İletişim</span>
-                    <span class="en" style="display: none;">Contact</span>
-                </a>
-                <button class="language-btn" onclick="toggleLanguage()">EN</button>
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#experience">Overview</a>
+                <a href="#contact">Contact</a>
+                <a href="#download">Download</a>
+                <div class="language-selector">
+                    <button class="language-btn" onclick="toggleLanguageDropdown()">
+                        <span class="current-lang">EN</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="language-dropdown">
+                        <div class="language-option" onclick="selectLanguage('en')">
+                            <span>English</span>
+                        </div>
+                        <div class="language-option" onclick="selectLanguage('tr')">
+                            <span>Türkçe</span>
+                        </div>
+                        <div class="language-option" onclick="selectLanguage('de')">
+                            <span>Deutsch</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -45,109 +58,615 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1 class="tr">Holy GPT ile Kutsal Metinlere Erişin</h1>
-                <h1 class="en" style="display: none;">Access Sacred Texts with Holy GPT</h1>
-
-                <p class="tr">Kutsal kitapları keşfedin, manevi rehberlik alanında ve inanç yolculuğunuzda size eşlik
-                    edecek yapay zeka asistanınız</p>
-                <p class="en" style="display: none;">Discover holy books with your AI assistant that will accompany you
-                    in spiritual guidance and your faith journey</p>
-
-                <a href="#download" class="cta-button">
-                    <span class="tr">Hemen İndir</span>
-                    <span class="en" style="display: none;">Download Now</span>
-                </a>
+                <h1>Enlighten Your Spiritual Journey<br>with HolyGPT</h1>
+                <p>Discover sacred texts, seek daily guidance through bibliomancy, and explore AI-powered spiritual
+                    insights with HolyGPT.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="store-button">
+                        <i class="fab fa-apple"></i>
+                        <span>App Store (soon)</span>
+                    </a>
+                    <a href="#" class="store-button">
+                        <i class="fab fa-google-play"></i>
+                        <span>Google Play</span>
+                    </a>
+                </div>
             </div>
-            <div class="hero-image">
-                <img src="app-mockup.png" alt="Holy GPT App Preview">
+            <div class="hero-visual">
+                <div class="slider-container">
+                    <div class="slide prev">
+                        <div class="phone-mockup">
+                            <img src="screens/en/main.png" alt="HolyGPT Ana Ekran" class="main-screen">
+                        </div>
+                    </div>
+                    <div class="slide active">
+                        <div class="phone-mockup">
+                            <img src="screens/en/chat.png" alt="HolyGPT Sohbet" class="main-screen">
+                        </div>
+                    </div>
+                    <div class="slide next">
+                        <div class="phone-mockup">
+                            <img src="screens/en/magic_kuran.png" alt="Büyülü Kuran" class="main-screen">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="phone-mockup">
+                            <img src="screens/en/kuran_page.png" alt="Kuran Sayfası" class="main-screen">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="phone-mockup">
+                            <img src="screens/en/kuran.png" alt="Kuran Ekranı" class="main-screen">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="phone-mockup">
+                            <img src="screens/en/magic_incil.png" alt="Büyülü İncil" class="main-screen">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="phone-mockup">
+                            <img src="screens/en/incil_page.png" alt="İncil Detay Sayfası" class="main-screen">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="phone-mockup">
+                            <img src="screens/en/incil.png" alt="İncil Ekranı" class="main-screen">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <div class="slider-dot active"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                </div>
             </div>
         </section>
 
         <section id="features" class="features">
-            <h2 class="tr">Özellikler</h2>
-            <h2 class="en" style="display: none;">Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3>Available in 4 languages</h3>
+                    <p>Full texts in English, German, Turkish and Spanish.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3>Bibliomancy</h3>
+                    <p>Bibliomancy is a form of divination that involves randomly selecting a passage from a book, often
+                        a sacred text, to seek guidance or predict the future.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>HolyGPT</h3>
+                    <p>An AI assistant specially trained on all religions and beliefs.</p>
+                </div>
+            </div>
+        </section>
 
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <h3 class="tr">Çoklu Dil Desteği</h3>
-                    <h3 class="en" style="display: none;">Multi-Language Support</h3>
-                    <p class="tr">Kuran ve İncil'i 4 farklı dilde okuyun: Türkçe, İngilizce, Almanca ve İspanyolca</p>
-                    <p class="en" style="display: none;">Read the Quran and Bible in 4 different languages: Turkish,
-                        English, German, and Spanish</p>
+        <section id="experience" class="experience">
+            <div class="overview-section">
+                <div class="nav-arrow left">
+                    <i class="fas fa-chevron-left fa-2x"></i>
                 </div>
-                <div class="feature-card">
-                    <h3 class="tr">Günlük Ayet</h3>
-                    <h3 class="en" style="display: none;">Daily Verse</h3>
-                    <p class="tr">Her gün size özel seçilen ayetler ile manevi yolculuğunuza ışık tutun</p>
-                    <p class="en" style="display: none;">Illuminate your spiritual journey with daily selected verses
-                    </p>
+                <div class="overview-content active" id="overview-1">
+                    <div class="triple-showcase">
+                        <div class="phone-mockup side-left">
+                            <img src="screens/en/kuran.png" alt="Kuran" class="main-screen">
+                        </div>
+                        <div class="phone-mockup center">
+                            <img src="screens/en/main.png" alt="Main Screen" class="main-screen">
+                        </div>
+                        <div class="phone-mockup side-right">
+                            <img src="screens/en/incil.png" alt="İncil" class="main-screen">
+                        </div>
+                    </div>
+                    <div class="overview-text">
+                        <h2>Read and Explore Every Word</h2>
+                        <p>Access full-text sacred scriptures without limitations. Read, search, and reflect on divine
+                            wisdom in its entirety.</p>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <h3 class="tr">Akıllı Chatbot</h3>
-                    <h3 class="en" style="display: none;">Smart Chatbot</h3>
-                    <p class="tr">İnanç ve din konularında sorularınızı sorabileceğiniz yapay zeka destekli sohbet
-                        asistanı</p>
-                    <p class="en" style="display: none;">AI-powered chat assistant to answer your questions about faith
-                        and religion</p>
+
+                <div class="overview-content" id="overview-2">
+                    <div class="app-showcase">
+                        <div class="phone-mockup">
+                            <img src="screens/en/chat.png" alt="HolyGPT Chat" class="main-screen">
+                        </div>
+                    </div>
+                    <div class="overview-text">
+                        <h2>HolyGPT – Ask About Any Faith</h2>
+                        <p>Engage in deep conversations with our AI assistant, designed to discuss all religions and
+                            spiritual beliefs with knowledge and insight.</p>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <h3 class="tr">Kolay Kullanım</h3>
-                    <h3 class="en" style="display: none;">Easy to Use</h3>
-                    <p class="tr">Kullanıcı dostu arayüz ile kutsal metinlere anında erişim</p>
-                    <p class="en" style="display: none;">Instant access to sacred texts with a user-friendly interface
-                    </p>
+
+                <div class="overview-content" id="overview-3">
+                    <div class="double-showcase">
+                        <div class="phone-mockup left">
+                            <img src="screens/en/magic_incil.png" alt="Magic İncil" class="main-screen">
+                        </div>
+                        <div class="phone-mockup right">
+                            <img src="screens/en/incil_page.png" alt="İncil Page" class="main-screen">
+                        </div>
+                    </div>
+                    <div class="overview-text">
+                        <h2>Bibliomancy – Daily Divine Guidance</h2>
+                        <p>Seek inspiration through bibliomancy and receive a daily sacred text for reflection and
+                            spiritual insight.</p>
+                    </div>
+                </div>
+
+                <div class="overview-content" id="overview-4">
+                    <div class="double-showcase">
+                        <div class="phone-mockup left">
+                            <img src="screens/en/magic_kuran.png" alt="Magic Kuran" class="main-screen">
+                        </div>
+                        <div class="phone-mockup right">
+                            <img src="screens/en/kuran_page.png" alt="Kuran Page" class="main-screen">
+                        </div>
+                    </div>
+                    <div class="overview-text">
+                        <h2>Bibliomancy – Daily Divine Guidance</h2>
+                        <p>Seek inspiration through bibliomancy and receive a daily sacred text for reflection and
+                            spiritual insight.</p>
+                    </div>
+                </div>
+
+                <div class="nav-arrow right">
+                    <i class="fas fa-chevron-right fa-2x"></i>
+                </div>
+
+                <div class="overview-dots">
+                    <span class="overview-dot active"></span>
+                    <span class="overview-dot"></span>
+                    <span class="overview-dot"></span>
+                    <span class="overview-dot"></span>
                 </div>
             </div>
         </section>
 
         <section id="download" class="download">
-            <h2 class="tr">Uygulamayı İndirin</h2>
-            <h2 class="en" style="display: none;">Download the App</h2>
-            <div class="store-buttons">
-                <a href="#" class="store-button">App Store</a>
-                <a href="#" class="store-button">Google Play</a>
+            <div class="download-content">
+                <h2>Download Now</h2>
+                <div class="store-buttons">
+                    <a href="#" class="store-button">
+                        <i class="fab fa-apple"></i>
+                        <span>App Store (soon)</span>
+                    </a>
+                    <a href="#" class="store-button">
+                        <i class="fab fa-google-play"></i>
+                        <span>Google Play</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-content">
+                <h2>Get in Touch</h2>
+                <div class="contact-links">
+                    <a href="https://twitter.com/holygpt_app" target="_blank" class="contact-item">
+                        <i class="fab fa-twitter"></i>
+                        <span>@holygpt_app</span>
+                    </a>
+                    <a href="https://instagram.com/holygpt_app" target="_blank" class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <span>@holygpt_app</span>
+                        <a href="mailto:support@holy-gpt.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>support@holy-gpt.com</span>
+                        </a>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer id="contact">
+    <footer>
         <div class="footer-content">
-            <div class="footer-info">
-                <h3 class="tr">İletişim</h3>
-                <h3 class="en" style="display: none;">Contact</h3>
-                <p>Email: info@holy-gpt.com</p>
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="holy_logo.png" alt="HolyGPT Logo">
+                    <span>HolyGPT</span>
+                </div>
+                <p>Smart access to sacred texts</p>
             </div>
             <div class="footer-links">
-                <a href="#" class="tr">Gizlilik Politikası</a>
-                <a href="#" class="en" style="display: none;">Privacy Policy</a>
-                <a href="#" class="tr">Kullanım Şartları</a>
-                <a href="#" class="en" style="display: none;">Terms of Use</a>
+                <a href="mailto:support@holy-gpt.com">support@holy-gpt.com</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
             </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 HolyGPT</p>
         </div>
     </footer>
 
     <script>
-        function toggleLanguage() {
-            const trElements = document.querySelectorAll('.tr');
-            const enElements = document.querySelectorAll('.en');
-            const langBtn = document.querySelector('.language-btn');
+        document.addEventListener('DOMContentLoaded', function () {
+            const slider = document.querySelector('.slider-container');
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.slider-dot');
 
-            trElements.forEach(el => {
-                if (el.style.display === 'none') {
-                    el.style.display = '';
-                    langBtn.textContent = 'EN';
+            let isDragging = false;
+            let startPos = 0;
+            let currentTranslate = 0;
+            let prevTranslate = 0;
+            let currentIndex = 1;
+
+            // Touch events
+            slider.addEventListener('touchstart', dragStart);
+            slider.addEventListener('touchend', dragEnd);
+            slider.addEventListener('touchmove', drag);
+
+            // Mouse events
+            slider.addEventListener('mousedown', dragStart);
+            slider.addEventListener('mouseup', dragEnd);
+            slider.addEventListener('mouseleave', dragEnd);
+            slider.addEventListener('mousemove', drag);
+
+            // Prevent context menu
+            window.oncontextmenu = function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                return false;
+            }
+
+            function dragStart(event) {
+                if (event.type === 'touchstart') {
+                    startPos = event.touches[0].clientX;
                 } else {
-                    el.style.display = 'none';
-                    langBtn.textContent = 'TR';
+                    startPos = event.clientX;
+                    event.preventDefault();
+                }
+                isDragging = true;
+            }
+
+            function drag(event) {
+                if (isDragging) {
+                    const currentPosition = event.type === 'touchmove' ? event.touches[0].clientX : event.clientX;
+                    const diff = currentPosition - startPos;
+
+                    if (Math.abs(diff) > 100) {
+                        if (diff > 0) {
+                            // Sola kaydırma
+                            let newIndex = currentIndex - 1;
+                            if (newIndex < 0) {
+                                newIndex = slides.length - 1;
+                            }
+                            updateSlides(newIndex);
+                            isDragging = false;
+                        } else {
+                            // Sağa kaydırma
+                            let newIndex = currentIndex + 1;
+                            if (newIndex >= slides.length) {
+                                newIndex = 0;
+                            }
+                            updateSlides(newIndex);
+                            isDragging = false;
+                        }
+                    }
+                }
+            }
+
+            function dragEnd() {
+                isDragging = false;
+            }
+
+            function updateSlides(index) {
+                currentIndex = index;
+
+                // Önceki, aktif ve sonraki slide'ları belirle
+                let prevIndex = index - 1;
+                let nextIndex = index + 1;
+
+                // Sonsuz döngü için indeks düzeltmeleri
+                if (prevIndex < 0) prevIndex = slides.length - 1;
+                if (nextIndex >= slides.length) nextIndex = 0;
+
+                // Tüm slide'ları sıfırla
+                slides.forEach(slide => slide.className = 'slide');
+
+                // Aktif ve yanındaki slide'ları güncelle
+                slides[prevIndex].classList.add('prev');
+                slides[index].classList.add('active');
+                slides[nextIndex].classList.add('next');
+
+                // Noktaları güncelle
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === index);
+                });
+            }
+
+            // Noktalara tıklama
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    updateSlides(index);
+                });
+            });
+
+            // Otomatik kaydırma fonksiyonu
+            function autoSlide() {
+                let newIndex = currentIndex + 1;
+                if (newIndex >= slides.length) {
+                    newIndex = 0;
+                }
+                updateSlides(newIndex);
+            }
+
+            // 2 saniyede bir otomatik kaydırma
+            let autoSlideInterval = setInterval(autoSlide, 5000);
+
+            // Mouse ile etkileşimde otomatik kaydırmayı durdur
+            slider.addEventListener('mouseenter', () => {
+                clearInterval(autoSlideInterval);
+            });
+
+            // Mouse ayrıldığında otomatik kaydırmayı tekrar başlat
+            slider.addEventListener('mouseleave', () => {
+                autoSlideInterval = setInterval(autoSlide, 2000);
+            });
+
+            // Dokunmatik etkileşimde otomatik kaydırmayı durdur
+            slider.addEventListener('touchstart', () => {
+                clearInterval(autoSlideInterval);
+            });
+
+            // Dokunmatik etkileşim bittiğinde otomatik kaydırmayı tekrar başlat
+            slider.addEventListener('touchend', () => {
+                autoSlideInterval = setInterval(autoSlide, 2000);
+            });
+        });
+
+        // Overview slider için yeni kod
+        document.addEventListener('DOMContentLoaded', function () {
+            const overviewContents = document.querySelectorAll('.overview-content');
+            const overviewDots = document.querySelectorAll('.overview-dot');
+            const leftArrow = document.querySelector('.nav-arrow.left');
+            const rightArrow = document.querySelector('.nav-arrow.right');
+            let currentOverview = 0;
+
+            function showOverview(index) {
+                overviewContents.forEach(content => content.classList.remove('active'));
+                overviewDots.forEach(dot => dot.classList.remove('active'));
+
+                overviewContents[index].classList.add('active');
+                overviewDots[index].classList.add('active');
+            }
+
+            function nextOverview() {
+                currentOverview = (currentOverview + 1) % overviewContents.length;
+                showOverview(currentOverview);
+            }
+
+            function prevOverview() {
+                currentOverview = (currentOverview - 1 + overviewContents.length) % overviewContents.length;
+                showOverview(currentOverview);
+            }
+
+            leftArrow.addEventListener('click', prevOverview);
+            rightArrow.addEventListener('click', nextOverview);
+
+            overviewDots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentOverview = index;
+                    showOverview(currentOverview);
+                });
+            });
+        });
+
+        // Dil değişkenleri
+        const translations = {
+            en: {
+                home: "Home",
+                features: "Features",
+                overview: "Overview",
+                contact: "Contact",
+                download: "Download",
+                hero_title: "Enlighten Your Spiritual Journey<br>with HolyGPT",
+                hero_subtitle: "Discover sacred texts, seek daily guidance through bibliomancy, and explore AI-powered spiritual insights with HolyGPT.",
+                app_store: "App Store",
+                google_play: "Google Play",
+                app_store_soon: "App Store (soon)",
+                features_title_1: "Available in 4 languages",
+                features_desc_1: "Full texts in English, German, Turkish and Spanish.",
+                features_title_2: "Bibliomancy",
+                features_desc_2: "Bibliomancy is a form of divination that involves randomly selecting a passage from a book, often a sacred text, to seek guidance.",
+                features_title_3: "HolyGPT",
+                features_desc_3: "An AI assistant specially trained on all religions and beliefs.",
+                overview_title_1: "Read and Explore Every Word",
+                overview_desc_1: "Access full-text sacred scriptures without limitations. Read, search, and reflect on divine wisdom in its entirety.",
+                overview_title_2: "HolyGPT – Ask About Any Faith",
+                overview_desc_2: "Engage in deep conversations with our AI assistant, designed to discuss all religions and spiritual beliefs with knowledge and insight.",
+                overview_title_3: "Bibliomancy – Daily Divine Guidance",
+                overview_desc_3: "Seek inspiration through bibliomancy and receive a daily sacred text for reflection and spiritual insight.",
+                download_now: "Download Now",
+                get_in_touch: "Get in Touch",
+                footer_desc: "Smart access to sacred texts",
+                privacy_policy: "Privacy Policy",
+                terms_of_use: "Terms of Use"
+            },
+            tr: {
+                home: "Ana Sayfa",
+                features: "Özellikler",
+                overview: "Genel Bakış",
+                contact: "İletişim",
+                download: "İndir",
+                hero_title: "HolyGPT ile<br>Manevi Yolculuğunuzu Aydınlatın",
+                hero_subtitle: "Kutsal metinleri keşfedin, Tefe'ül yoluyla günlük rehberlik alın ve HolyGPT'nin yapay zeka destekli manevi içgörülerini keşfedin.",
+                app_store: "App Store",
+                google_play: "Google Play",
+                app_store_soon: "App Store (yakında)",
+                features_title_1: "4 dilde kullanılabilir",
+                features_desc_1: "İngilizce, Almanca, Türkçe ve İspanyolca tam metinler.",
+                features_title_2: "Tefe'ül",
+                features_desc_2: "Tefe'ül, rehberlik amacıyla genellikle kutsal bir metinden rastgele bir pasaj seçmeyi içeren bir kehanet şeklidir.",
+                features_title_3: "HolyGPT",
+                features_desc_3: "Tüm dinler ve inançlar üzerine özel olarak eğitilmiş yapay zeka asistanı.",
+                overview_title_1: "Her Ayeti Okuyun ve Keşfedin",
+                overview_desc_1: "Sınırsız olarak kutsal metinlere erişin. İlahi hikmeti bütünüyle okuyun, arayın ve üzerinde düşünün.",
+                overview_title_2: "HolyGPT – Herhangi Bir İnanç Hakkında Sorun",
+                overview_desc_2: "Yapay zeka asistanımızla derin sohbetlere dalın, tüm dinler ve manevi inançlar hakkında bilgi ve içgörü edinin.",
+                overview_title_3: "Tefe'ül – Günlük İlahi Rehberlik",
+                overview_desc_3: "Tefe'ül yoluyla ilham alın ve manevi içgörü için günlük kutsal metin alın.",
+                download_now: "Şimdi İndir",
+                get_in_touch: "İletişime Geçin",
+                footer_desc: "Kutsal metinlere akıllı erişim",
+                privacy_policy: "Gizlilik Politikası",
+                terms_of_use: "Kullanım Koşulları"
+            },
+            de: {
+                home: "Startseite",
+                features: "Funktionen",
+                overview: "Überblick",
+                contact: "Kontakt",
+                download: "Herunterladen",
+                hero_title: "Erhellen Sie Ihre spirituelle Reise<br>mit HolyGPT",
+                hero_subtitle: "Entdecken Sie heilige Texte, suchen Sie täglich Führung durch Stichomantie und erkunden Sie KI-gestützte spirituelle Einblicke mit HolyGPT.",
+                app_store: "App Store",
+                google_play: "Google Play",
+                app_store_soon: "App Store (bald)",
+                features_title_1: "In 4 Sprachen verfügbar",
+                features_desc_1: "Vollständige Texte in Englisch, Deutsch, Türkisch und Spanisch.",
+                features_title_2: "Stichomantie",
+                features_desc_2: "Stichomantie ist eine Form der Weissagung, bei der zufällig eine Passage aus einem Buch, oft einem heiligen Text, ausgewählt wird, um Führung zu erhalten.",
+                features_title_3: "HolyGPT",
+                features_desc_3: "Ein KI-Assistent, der speziell für alle Religionen und Glaubensrichtungen trainiert wurde.",
+                overview_title_1: "Lesen und Erkunden Sie jedes Wort",
+                overview_desc_1: "Greifen Sie uneingeschränkt auf heilige Schriften zu. Lesen, suchen und reflektieren Sie die göttliche Weisheit in ihrer Gesamtheit.",
+                overview_title_2: "HolyGPT – Fragen Sie nach jedem Glauben",
+                overview_desc_2: "Führen Sie tiefgehende Gespräche mit unserem KI-Assistenten, der darauf ausgelegt ist, alle Religionen und spirituellen Überzeugungen mit Wissen und Einsicht zu diskutieren.",
+                overview_title_3: "Stichomantie – Tägliche göttliche Führung",
+                overview_desc_3: "Suchen Sie Inspiration durch Stichomantie und erhalten Sie täglich einen heiligen Text zur Reflexion und spirituellen Einsicht.",
+                download_now: "Jetzt Herunterladen",
+                get_in_touch: "Kontakt aufnehmen",
+                footer_desc: "Intelligenter Zugang zu heiligen Texten",
+                privacy_policy: "Datenschutzerklärung",
+                terms_of_use: "Nutzungsbedingungen"
+            }
+        };
+
+        // Otomatik dil seçimi fonksiyonu
+        function getInitialLanguage() {
+            const userLanguage = navigator.language.toLowerCase();
+            const userRegion = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+            // Almanca konuşulan bölgeler için
+            if (userRegion.includes('Berlin') ||
+                userRegion.includes('Vienna') ||
+                userRegion.includes('Zurich') ||
+                userRegion.includes('Warsaw') ||
+                userLanguage.startsWith('de')) {
+                return 'de';
+            }
+
+            // Türkiye için
+            if (userRegion.includes('Istanbul') ||
+                userRegion.includes('Turkey') ||
+                userLanguage.startsWith('tr')) {
+                return 'tr';
+            }
+
+            // Diğer tüm bölgeler için
+            return 'en';
+        }
+
+        let currentLang = getInitialLanguage();
+
+        // Sayfa yüklendiğinde dili güncelle
+        document.addEventListener('DOMContentLoaded', function () {
+            updateLanguage();
+        });
+
+        function toggleLanguageDropdown() {
+            const dropdown = document.querySelector('.language-dropdown');
+            dropdown.classList.toggle('show');
+        }
+
+        function selectLanguage(lang) {
+            currentLang = lang;
+            updateLanguage();
+            toggleLanguageDropdown();
+        }
+
+        // Dropdown'ı dışarı tıklandığında kapat
+        document.addEventListener('click', function (event) {
+            if (!event.target.closest('.language-selector')) {
+                document.querySelector('.language-dropdown').classList.remove('show');
+            }
+        });
+
+        function updateLanguage() {
+            // Dil butonunu güncelle
+            document.querySelector('.current-lang').textContent = currentLang.toUpperCase();
+
+            // Navigation linkleri
+            document.querySelector('a[href="#home"]').textContent = translations[currentLang].home;
+            document.querySelector('a[href="#features"]').textContent = translations[currentLang].features;
+            document.querySelector('a[href="#experience"]').textContent = translations[currentLang].overview;
+            document.querySelector('a[href="#contact"]').textContent = translations[currentLang].contact;
+            document.querySelector('a[href="#download"]').textContent = translations[currentLang].download;
+
+            // Hero section
+            document.querySelector('.hero h1').innerHTML = translations[currentLang].hero_title;
+            document.querySelector('.hero p').textContent = translations[currentLang].hero_subtitle;
+
+            // Store buttons
+            document.querySelectorAll('.store-button span').forEach(span => {
+                if (span.textContent.includes('soon')) {
+                    span.textContent = translations[currentLang].app_store_soon;
+                } else if (span.textContent.includes('App')) {
+                    span.textContent = translations[currentLang].app_store;
+                } else {
+                    span.textContent = translations[currentLang].google_play;
                 }
             });
 
-            enElements.forEach(el => {
-                if (el.style.display === 'none') {
-                    el.style.display = '';
-                } else {
-                    el.style.display = 'none';
-                }
+            // Features
+            document.querySelectorAll('.feature-item h3')[0].textContent = translations[currentLang].features_title_1;
+            document.querySelectorAll('.feature-item p')[0].textContent = translations[currentLang].features_desc_1;
+            document.querySelectorAll('.feature-item h3')[1].textContent = translations[currentLang].features_title_2;
+            document.querySelectorAll('.feature-item p')[1].textContent = translations[currentLang].features_desc_2;
+            document.querySelectorAll('.feature-item h3')[2].textContent = translations[currentLang].features_title_3;
+            document.querySelectorAll('.feature-item p')[2].textContent = translations[currentLang].features_desc_3;
+
+            // Overview sections
+            document.querySelector('#overview-1 h2').textContent = translations[currentLang].overview_title_1;
+            document.querySelector('#overview-1 p').textContent = translations[currentLang].overview_desc_1;
+            document.querySelector('#overview-2 h2').textContent = translations[currentLang].overview_title_2;
+            document.querySelector('#overview-2 p').textContent = translations[currentLang].overview_desc_2;
+            document.querySelector('#overview-3 h2').textContent = translations[currentLang].overview_title_3;
+            document.querySelector('#overview-3 p').textContent = translations[currentLang].overview_desc_3;
+            document.querySelector('#overview-4 h2').textContent = translations[currentLang].overview_title_3;
+            document.querySelector('#overview-4 p').textContent = translations[currentLang].overview_desc_3;
+
+            // Download section
+            document.querySelector('.download h2').textContent = translations[currentLang].download_now;
+
+            // Contact section
+            document.querySelector('.contact h2').textContent = translations[currentLang].get_in_touch;
+
+            // Footer
+            document.querySelector('.footer-brand p').textContent = translations[currentLang].footer_desc;
+            document.querySelectorAll('.footer-links a')[1].textContent = translations[currentLang].privacy_policy;
+            document.querySelectorAll('.footer-links a')[2].textContent = translations[currentLang].terms_of_use;
+
+            // Görsellerin yollarını güncelle
+            document.querySelectorAll('.main-screen').forEach(img => {
+                const currentSrc = img.getAttribute('src');
+                img.setAttribute('src', currentSrc.replace(/screens\/(en|tr|de)/, `screens/${currentLang}`));
             });
         }
     </script>
