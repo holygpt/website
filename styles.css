@@ -843,8 +843,9 @@ footer {
     }
 
     .slide {
-        width: 200px;
-        height: 400px;
+        width: 180px;
+        height: 360px;
+        max-width: 220px;
     }
 
     .slide.prev {
@@ -868,11 +869,12 @@ footer {
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .hero p {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        margin-bottom: 2rem;
     }
 
     .features {
@@ -899,6 +901,57 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+    }
+
+    .phone-mockup {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+        aspect-ratio: 9/19;
+    }
+
+    .overview-text h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .overview-text p {
+        font-size: 0.95rem;
+    }
+
+    .feature-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .feature-item p {
+        font-size: 0.95rem;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact-item {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .language-option span {
+        font-size: 0.85rem;
+    }
+
+    .store-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .store-button i {
+        font-size: 1.2rem;
     }
 }
 
