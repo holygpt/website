@@ -100,6 +100,9 @@ nav {
     position: relative;
     margin: 0;
     padding: 6rem 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .hero-content {
@@ -606,6 +609,43 @@ footer {
 }
 
 @media (max-width: 992px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 100vh;
+        background: var(--white);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+        padding: 6rem 1rem 2rem;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        margin: 0.3rem 0;
+        font-size: 1.1rem;
+        width: auto;
+        color: var(--text);
+    }
+
+    .language-selector {
+        margin: 0.5rem 0;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
     .hero {
         display: flex;
         flex-direction: column;
@@ -658,7 +698,6 @@ footer {
         opacity: 0;
     }
 
-    /* Overview section düzeltmeleri */
     .overview-section {
         padding: 2rem 1rem;
     }
@@ -708,128 +747,6 @@ footer {
         width: 100%;
         max-width: 500px;
         margin: 0 auto;
-    }
-
-    .nav-links {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 50%;
-        height: 100vh;
-        background: var(--white);
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        transition: right 0.3s ease-in-out;
-        z-index: 1000;
-        padding: 6rem 1rem 2rem;
-        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-        display: flex;
-        gap: 0.5rem;
-    }
-
-    .nav-links.active {
-        right: 0;
-    }
-
-    .nav-links a {
-        margin: 0.3rem 0;
-        font-size: 1.1rem;
-        width: auto;
-        color: var(--text);
-    }
-
-    .language-selector {
-        margin: 0.5rem 0;
-    }
-
-    .hamburger-menu {
-        display: flex;
-    }
-
-    .nav-links {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 100%;
-        height: 100vh;
-        background: var(--bg);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: right 0.3s ease-in-out;
-        z-index: 1000;
-        padding: 2rem;
-        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-        display: flex;
-    }
-
-    .nav-links.active {
-        right: 0;
-    }
-
-    .nav-links a {
-        margin: 0.8rem 0;
-        font-size: 1.2rem;
-        width: auto;
-    }
-
-    .language-selector {
-        margin: 1rem 0;
-    }
-
-    .hero-visual {
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .slider-container {
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .phone-mockup {
-        width: 100%;
-        max-width: 260px;
-        height: auto;
-        aspect-ratio: 9/19;
-    }
-
-    .main-screen {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-    }
-
-    .slide {
-        width: auto;
-        height: auto;
-        max-width: 260px;
-    }
-
-    .triple-showcase,
-    .double-showcase {
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .triple-showcase .phone-mockup,
-    .double-showcase .phone-mockup {
-        width: 100%;
-        max-width: 260px;
-        height: auto;
-        aspect-ratio: 9/19;
-    }
-
-    .overview-section {
-        padding: 2rem 1rem;
-        overflow: hidden;
-    }
-
-    .overview-content {
-        width: 100%;
-        padding: 1rem;
     }
 }
 
