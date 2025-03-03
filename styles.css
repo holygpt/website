@@ -953,6 +953,26 @@ footer {
     .store-button i {
         font-size: 1.2rem;
     }
+
+    .experience {
+        display: none;
+    }
+
+    .overview-section {
+        display: none;
+    }
+
+    .overview-content {
+        display: none;
+    }
+
+    .nav-arrow {
+        display: none;
+    }
+
+    .overview-dots {
+        display: none;
+    }
 }
 
 .overview-section {
