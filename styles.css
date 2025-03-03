@@ -679,6 +679,93 @@ footer {
         position: relative;
         transform: none;
     }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: var(--bg);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+        padding: 2rem;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        margin: 1rem 0;
+        font-size: 1.2rem;
+    }
+
+    .language-selector {
+        margin: 1rem 0;
+    }
+
+    .hero-visual {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slider-container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .phone-mockup {
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+        aspect-ratio: 9/19;
+    }
+
+    .main-screen {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .slide {
+        width: auto;
+        height: auto;
+        max-width: 260px;
+    }
+
+    .triple-showcase,
+    .double-showcase {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .triple-showcase .phone-mockup,
+    .double-showcase .phone-mockup {
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+        aspect-ratio: 9/19;
+    }
+
+    .overview-section {
+        padding: 2rem 1rem;
+        overflow: hidden;
+    }
+
+    .overview-content {
+        width: 100%;
+        padding: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -692,6 +779,27 @@ footer {
 
     .phone-mockup {
         width: 260px;
+    }
+
+    .nav {
+        padding: 0 1rem;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .logo span {
+        font-size: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .store-button {
+        width: 100%;
+        justify-content: center;
     }
 }
 
@@ -723,6 +831,52 @@ footer {
 
     .slide.next {
         transform: translateX(50%) scale(0.8);
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .hero {
+        padding: 8rem 1rem 4rem;
+    }
+
+    .hero-content {
+        padding: 0 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .features {
+        padding: 4rem 1rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact {
+        padding: 4rem 1rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
     }
 }
 
@@ -940,9 +1094,9 @@ footer {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 70%;
+        width: 100%;
         height: 100vh;
-        background: var(--white);
+        background: var(--bg);
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -950,6 +1104,7 @@ footer {
         z-index: 1000;
         padding: 2rem;
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        display: flex;
     }
 
     .nav-links.active {
@@ -963,5 +1118,58 @@ footer {
 
     .language-selector {
         margin: 1rem 0;
+    }
+
+    .hero-visual {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slider-container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .phone-mockup {
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+        aspect-ratio: 9/19;
+    }
+
+    .main-screen {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .slide {
+        width: auto;
+        height: auto;
+        max-width: 260px;
+    }
+
+    .triple-showcase,
+    .double-showcase {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .triple-showcase .phone-mockup,
+    .double-showcase .phone-mockup {
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+        aspect-ratio: 9/19;
+    }
+
+    .overview-section {
+        padding: 2rem 1rem;
+        overflow: hidden;
+    }
+
+    .overview-content {
+        width: 100%;
+        padding: 1rem;
     }
 }
