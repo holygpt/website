@@ -30,7 +30,9 @@ header {
     top: 0;
     z-index: 1000;
     padding: 1.5rem 0;
-    background: transparent;
+    background: rgba(215, 189, 160, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 nav {
@@ -92,6 +94,10 @@ nav {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+.get-it-now i {
+    font-size: 1.5rem;
+}
+
 /* Hero Section */
 .hero {
     width: 100%;
@@ -99,7 +105,7 @@ nav {
     overflow: hidden;
     position: relative;
     margin: 0;
-    padding: 6rem 1rem 2rem;
+    padding: 8rem 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
