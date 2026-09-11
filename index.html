@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>HolyGPT - Smart Access to Sacred Texts</title>
+    <title>HolyGPT - Read, Discover, Reflect</title>
+    <meta name="description" content="Read sacred texts offline, discover verses and keep your reflections in a personal journal with HolyGPT.">
     <link rel="icon" type="image/png" href="holy_logo.png">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJ3MBZHLER"></script>
@@ -55,6 +56,9 @@
                         <div class="language-option" onclick="selectLanguage('de')">
                             <span>Deutsch</span>
                         </div>
+                        <div class="language-option" onclick="selectLanguage('es')">
+                            <span>Español</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -64,9 +68,8 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1>Enlighten Your Spiritual Journey<br>with HolyGPT</h1>
-                <p>Discover sacred texts, seek daily guidance through bibliomancy, and explore AI-powered spiritual
-                    insights with HolyGPT.</p>
+                <h1>Read. Discover. Reflect.<br>Make every verse your own.</h1>
+                <p>Read sacred texts offline, discover verses and keep your reflections in a personal journal.</p>
                 <div class="hero-buttons">
                     <a href="#" class="store-button">
                         <i class="fab fa-apple"></i>
@@ -83,50 +86,32 @@
                 <div class="slider-container">
                     <div class="slide prev">
                         <div class="phone-mockup">
-                            <img src="screens/en/main.png" alt="HolyGPT Ana Ekran" class="main-screen">
+                            <img src="screens/en/01-home.png" alt="HolyGPT home screen" class="main-screen">
                         </div>
                     </div>
                     <div class="slide active">
                         <div class="phone-mockup">
-                            <img src="screens/en/chat.png" alt="HolyGPT Sohbet" class="main-screen">
+                            <img src="screens/en/02-verse.png" alt="Verse discovery and notes" class="main-screen">
                         </div>
                     </div>
                     <div class="slide next">
                         <div class="phone-mockup">
-                            <img src="screens/en/magic_kuran.png" alt="Büyülü Kuran" class="main-screen">
+                            <img src="screens/en/03-journal.png" alt="Personal verse journal" class="main-screen">
                         </div>
                     </div>
                     <div class="slide">
                         <div class="phone-mockup">
-                            <img src="screens/en/kuran_page.png" alt="Kuran Sayfası" class="main-screen">
+                            <img src="screens/en/04-note.png" alt="Dated reflections linked to a verse" class="main-screen">
                         </div>
                     </div>
                     <div class="slide">
                         <div class="phone-mockup">
-                            <img src="screens/en/kuran.png" alt="Kuran Ekranı" class="main-screen">
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="phone-mockup">
-                            <img src="screens/en/magic_incil.png" alt="Büyülü İncil" class="main-screen">
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="phone-mockup">
-                            <img src="screens/en/incil_page.png" alt="İncil Detay Sayfası" class="main-screen">
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="phone-mockup">
-                            <img src="screens/en/incil.png" alt="İncil Ekranı" class="main-screen">
+                            <img src="screens/en/05-reading.png" alt="Offline sacred text reader" class="main-screen">
                         </div>
                     </div>
                 </div>
                 <div class="slider-controls">
                     <div class="slider-dot active"></div>
-                    <div class="slider-dot"></div>
-                    <div class="slider-dot"></div>
-                    <div class="slider-dot"></div>
                     <div class="slider-dot"></div>
                     <div class="slider-dot"></div>
                     <div class="slider-dot"></div>
@@ -141,23 +126,22 @@
                     <div class="feature-icon">
                         <i class="fas fa-book-reader"></i>
                     </div>
-                    <h3>Available in 4 languages</h3>
-                    <p>Full texts in English, German, Turkish and Spanish.</p>
+                    <h3>Read offline in 4 languages</h3>
+                    <p>Explore sacred texts in English, German, Turkish and Spanish, wherever you are.</p>
                 </div>
                 <div class="feature-item">
                     <div class="feature-icon">
                         <i class="fas fa-sun"></i>
                     </div>
-                    <h3>Bibliomancy</h3>
-                    <p>Bibliomancy is a form of divination that involves randomly selecting a passage from a book, often
-                        a sacred text, to seek guidance or predict the future.</p>
+                    <h3>Discover a verse</h3>
+                    <p>Meet a randomly selected passage, read it in context and take a quiet moment to reflect.</p>
                 </div>
                 <div class="feature-item">
                     <div class="feature-icon">
-                        <i class="fas fa-brain"></i>
+                        <i class="fas fa-book-open"></i>
                     </div>
-                    <h3>HolyGPT</h3>
-                    <p>An AI assistant specially trained on all religions and beliefs.</p>
+                    <h3>Your personal journal</h3>
+                    <p>Save dated reflections beside each verse, revisit them and see how your thoughts grow over time.</p>
                 </div>
             </div>
         </section>
@@ -170,7 +154,8 @@
                         <i class="fab fa-apple"></i>
                         <span>App Store (soon)</span>
                     </a>
-                    <a href="#" class="store-button">
+                    <a href="https://play.google.com/store/apps/details?id=com.holygpt.holygpt" class="store-button"
+                        target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-google-play"></i>
                         <span>Google Play</span>
                     </a>
@@ -182,17 +167,9 @@
             <div class="contact-content">
                 <h2>Get in Touch</h2>
                 <div class="contact-links">
-                    <a href="https://twitter.com/holygpt_app" target="_blank" class="contact-item">
-                        <i class="fab fa-twitter"></i>
-                        <span>@holygpt_app</span>
-                    </a>
-                    <a href="https://instagram.com/holygpt_app" target="_blank" class="contact-item">
-                        <i class="fab fa-instagram"></i>
-                        <span>@holygpt_app</span>
-                        <a href="mailto:support@holy-gpt.com" class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>support@holy-gpt.com</span>
-                        </a>
+                    <a href="mailto:support@holy-gpt.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>support@holy-gpt.com</span>
                     </a>
                 </div>
             </div>
@@ -206,7 +183,7 @@
                     <img src="holy_logo.png" alt="HolyGPT Logo">
                     <span>HolyGPT</span>
                 </div>
-                <p>Smart access to sacred texts</p>
+                <p>Read, discover and keep a personal verse journal</p>
             </div>
             <div class="footer-links">
                 <a href="mailto:support@holy-gpt.com">support@holy-gpt.com</a>
@@ -215,7 +192,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 HolyGPT</p>
+            <p>&copy; 2026 HolyGPT</p>
         </div>
     </footer>
 
@@ -358,70 +335,100 @@
         // Dil değişkenleri
         const translations = {
             en: {
+                page_title: "HolyGPT - Read, Discover, Reflect",
                 home: "Home",
                 features: "Features",
                 contact: "Contact",
                 download: "Download",
-                hero_title: "Enlighten Your Spiritual Journey<br>with HolyGPT",
-                hero_subtitle: "Discover sacred texts, seek daily guidance through bibliomancy, and explore AI-powered spiritual insights with HolyGPT.",
+                hero_title: "Read. Discover. Reflect.<br>Make every verse your own.",
+                hero_subtitle: "Read sacred texts offline, discover verses and keep your reflections in a personal journal.",
                 app_store: "App Store (soon)",
                 google_play: "Google Play",
                 app_store_soon: "App Store (soon)",
-                features_title_1: "Available in 4 languages",
-                features_desc_1: "Full texts in English, German, Turkish and Spanish.",
-                features_title_2: "Bibliomancy",
-                features_desc_2: "Bibliomancy is a form of divination that involves randomly selecting a passage from a book, often a sacred text, to seek guidance.",
-                features_title_3: "HolyGPT",
-                features_desc_3: "An AI assistant specially trained on all religions and beliefs.",
+                features_title_1: "Read offline in 4 languages",
+                features_desc_1: "Explore sacred texts in English, German, Turkish and Spanish, wherever you are.",
+                features_title_2: "Discover a verse",
+                features_desc_2: "Meet a randomly selected passage, read it in context and take a quiet moment to reflect.",
+                features_title_3: "Your personal journal",
+                features_desc_3: "Save dated reflections beside each verse, revisit them and see how your thoughts grow over time.",
                 download_now: "Download Now",
                 get_in_touch: "Get in Touch",
-                footer_desc: "Smart access to sacred texts",
+                footer_desc: "Read, discover and keep a personal verse journal",
                 privacy_policy: "Privacy Policy",
-                terms_of_use: "Terms of Use"
+                terms_of_use: "Terms of Use",
+                image_alts: ["HolyGPT home screen", "Verse discovery and notes", "Personal verse journal", "Dated reflections linked to a verse", "Offline sacred text reader"]
             },
             tr: {
+                page_title: "HolyGPT - Oku, Keşfet, Düşün",
                 home: "Ana Sayfa",
                 features: "Özellikler",
                 contact: "İletişim",
                 download: "İndir",
-                hero_title: "HolyGPT ile<br>Manevi Yolculuğunuzu Aydınlatın",
-                hero_subtitle: "Kutsal metinleri keşfedin, Tefe'ül yoluyla günlük rehberlik alın ve HolyGPT'nin yapay zeka destekli manevi içgörülerini keşfedin.",
+                hero_title: "Oku. Keşfet. Düşün.<br>Her ayeti kendine ait kıl.",
+                hero_subtitle: "Kutsal metinleri çevrimdışı oku, ayetleri keşfet ve düşüncelerini kişisel defterinde sakla.",
                 app_store: "App Store(yakında)",
                 google_play: "Google Play",
                 app_store_soon: "App Store (yakında)",
-                features_title_1: "4 dilde kullanılabilir",
-                features_desc_1: "İngilizce, Almanca, Türkçe ve İspanyolca tam metinler.",
-                features_title_2: "Tefe'ül",
-                features_desc_2: "Tefe'ül, rehberlik amacıyla genellikle kutsal bir metinden rastgele bir pasaj seçmeyi içeren bir kehanet şeklidir.",
-                features_title_3: "HolyGPT",
-                features_desc_3: "Tüm dinler ve inançlar üzerine özel olarak eğitilmiş yapay zeka asistanı.",
+                features_title_1: "4 dilde çevrimdışı oku",
+                features_desc_1: "Kutsal metinleri Türkçe, İngilizce, Almanca ve İspanyolca dilediğin yerde keşfet.",
+                features_title_2: "Bir ayet keşfet",
+                features_desc_2: "Rastgele seçilen bir pasajla karşılaş, bağlamını oku ve üzerinde sakin bir an düşün.",
+                features_title_3: "Kişisel defterin",
+                features_desc_3: "Her ayetin yanına tarihli düşüncelerini kaydet, yeniden oku ve zaman içindeki değişimini gör.",
                 download_now: "Şimdi İndir",
                 get_in_touch: "İletişime Geçin",
-                footer_desc: "Kutsal metinlere akıllı erişim",
+                footer_desc: "Oku, keşfet ve kişisel ayet defterini oluştur",
                 privacy_policy: "Gizlilik Politikası",
-                terms_of_use: "Kullanım Koşulları"
+                terms_of_use: "Kullanım Koşulları",
+                image_alts: ["HolyGPT ana ekranı", "Ayet keşfi ve notlar", "Kişisel ayet defteri", "Ayete bağlı tarihli düşünceler", "Çevrimdışı kutsal metin okuyucu"]
             },
             de: {
+                page_title: "HolyGPT - Lesen, Entdecken, Reflektieren",
                 home: "Startseite",
                 features: "Funktionen",
                 contact: "Kontakt",
                 download: "Herunterladen",
-                hero_title: "Erhellen Sie Ihre spirituelle Reise<br>mit HolyGPT",
-                hero_subtitle: "Entdecken Sie heilige Texte, suchen Sie täglich Führung durch Stichomantie und erkunden Sie KI-gestützte spirituelle Einblicke mit HolyGPT.",
+                hero_title: "Lesen. Entdecken. Reflektieren.<br>Mach jeden Vers zu deinem eigenen.",
+                hero_subtitle: "Lies heilige Schriften offline, entdecke Verse und halte deine Gedanken in einem persönlichen Tagebuch fest.",
                 app_store: "App Store(bald)",
                 google_play: "Google Play",
                 app_store_soon: "App Store (bald)",
-                features_title_1: "In 4 Sprachen verfügbar",
-                features_desc_1: "Vollständige Texte in Englisch, Deutsch, Türkisch und Spanisch.",
-                features_title_2: "Stichomantie",
-                features_desc_2: "Stichomantie ist eine Form der Weissagung, bei der zufällig eine Passage aus einem Buch, oft einem heiligen Text, ausgewählt wird, um Führung zu erhalten.",
-                features_title_3: "HolyGPT",
-                features_desc_3: "Ein KI-Assistent, der speziell für alle Religionen und Glaubensrichtungen trainiert wurde.",
+                features_title_1: "Offline in 4 Sprachen lesen",
+                features_desc_1: "Entdecke heilige Schriften auf Deutsch, Englisch, Türkisch und Spanisch – überall.",
+                features_title_2: "Einen Vers entdecken",
+                features_desc_2: "Begegne einer zufällig ausgewählten Passage, lies ihren Zusammenhang und nimm dir Zeit zum Nachdenken.",
+                features_title_3: "Dein persönliches Tagebuch",
+                features_desc_3: "Speichere datierte Gedanken zu jedem Vers und erkenne, wie sie sich mit der Zeit entwickeln.",
                 download_now: "Jetzt Herunterladen",
                 get_in_touch: "Kontakt aufnehmen",
-                footer_desc: "Intelligenter Zugang zu heiligen Texten",
+                footer_desc: "Lesen, entdecken und ein persönliches Vers-Tagebuch führen",
                 privacy_policy: "Datenschutzerklärung",
-                terms_of_use: "Nutzungsbedingungen"
+                terms_of_use: "Nutzungsbedingungen",
+                image_alts: ["HolyGPT-Startseite", "Versentdeckung und Notizen", "Persönliches Vers-Tagebuch", "Datierte Gedanken zu einem Vers", "Offline-Leser für heilige Schriften"]
+            },
+            es: {
+                page_title: "HolyGPT - Lee, Descubre, Reflexiona",
+                home: "Inicio",
+                features: "Funciones",
+                contact: "Contacto",
+                download: "Descargar",
+                hero_title: "Lee. Descubre. Reflexiona.<br>Haz tuyo cada versículo.",
+                hero_subtitle: "Lee textos sagrados sin conexión, descubre versículos y guarda tus reflexiones en un diario personal.",
+                app_store: "App Store (próximamente)",
+                google_play: "Google Play",
+                app_store_soon: "App Store (próximamente)",
+                features_title_1: "Lectura sin conexión en 4 idiomas",
+                features_desc_1: "Explora textos sagrados en español, inglés, alemán y turco, estés donde estés.",
+                features_title_2: "Descubre un versículo",
+                features_desc_2: "Encuentra un pasaje al azar, léelo en su contexto y dedica un momento tranquilo a reflexionar.",
+                features_title_3: "Tu diario personal",
+                features_desc_3: "Guarda reflexiones fechadas junto a cada versículo y descubre cómo evolucionan con el tiempo.",
+                download_now: "Descargar ahora",
+                get_in_touch: "Contacto",
+                footer_desc: "Lee, descubre y crea tu diario personal de versículos",
+                privacy_policy: "Política de privacidad",
+                terms_of_use: "Términos de uso",
+                image_alts: ["Pantalla de inicio de HolyGPT", "Descubrimiento de versículos y notas", "Diario personal de versículos", "Reflexiones fechadas vinculadas a un versículo", "Lector de textos sagrados sin conexión"]
             }
         };
 
@@ -444,6 +451,11 @@
                 userRegion.includes('Turkey') ||
                 userLanguage.startsWith('tr')) {
                 return 'tr';
+            }
+
+            // İspanyolca konuşan kullanıcılar için
+            if (userLanguage.startsWith('es')) {
+                return 'es';
             }
 
             // Diğer tüm bölgeler için
@@ -476,6 +488,9 @@
         });
 
         function updateLanguage() {
+            document.documentElement.lang = currentLang;
+            document.title = translations[currentLang].page_title;
+
             // Dil butonunu güncelle
             document.querySelector('.current-lang').textContent = currentLang.toUpperCase();
 
@@ -490,14 +505,11 @@
             document.querySelector('.hero p').textContent = translations[currentLang].hero_subtitle;
 
             // Store buttons
-            document.querySelectorAll('.store-button span').forEach(span => {
-                if (span.textContent.includes('soon')) {
-                    span.textContent = translations[currentLang].app_store_soon;
-                } else if (span.textContent.includes('App')) {
-                    span.textContent = translations[currentLang].app_store;
-                } else {
-                    span.textContent = translations[currentLang].google_play;
-                }
+            document.querySelectorAll('.store-button').forEach(button => {
+                const span = button.querySelector('span');
+                span.textContent = button.querySelector('.fa-apple')
+                    ? translations[currentLang].app_store_soon
+                    : translations[currentLang].google_play;
             });
 
             // Features
@@ -520,9 +532,10 @@
             document.querySelectorAll('.footer-links a')[2].textContent = translations[currentLang].terms_of_use;
 
             // Görsellerin yollarını güncelle
-            document.querySelectorAll('.main-screen').forEach(img => {
+            document.querySelectorAll('.main-screen').forEach((img, index) => {
                 const currentSrc = img.getAttribute('src');
-                img.setAttribute('src', currentSrc.replace(/screens\/(en|tr|de)/, `screens/${currentLang}`));
+                img.setAttribute('src', currentSrc.replace(/screens\/(en|tr|de|es)/, `screens/${currentLang}`));
+                img.setAttribute('alt', translations[currentLang].image_alts[index]);
             });
         }
 
